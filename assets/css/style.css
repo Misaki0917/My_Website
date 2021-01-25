@@ -72,6 +72,12 @@ p{
   align-items: center;
 }
 
+@media screen and (max-width: 830px) {
+  .myself-wrapper {
+      flex-direction: column;
+  }
+}
+
 .myself-img{
   height: 300px;
   border-radius: 50%;
@@ -122,8 +128,17 @@ p{
   width: 31%;
   height:480px;
   text-align: left;
-  /* border: 1px solid black; */
 }
+
+/* セブオススメポイントのレスポンシブがかからない。何で？ */
+@media screen and (max-width: 830px) {
+  .rec {
+      width: 100%;
+      height: auto;
+      margin-bottom: 41px;
+  }
+}
+
 .cebu-pic img{
   /* 写真が大きすぎるのは何で？ */
   width:100%;
@@ -182,4 +197,17 @@ button{
 
 .contact{
   margin-bottom:100px ;
+}
+
+footer p{
+  color: white;
+  font-size: 16px;
+}
+
+footer{
+  width: 100%;
+  background-color: rgb(33,35,53);
+  display: flex;
+  justify-content: center;
+  padding: 25px 0;
 }
