@@ -93,3 +93,67 @@ p{
 .detail-right{
   margin-left: 70px;
 }
+
+.cebu-wrapper{
+  width: 100%;
+  text-align: center;
+  margin:0, 50px;
+}
+
+.cebu-title{
+  margin-top:80px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.cebu-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  /* これが効かないのは何で？ */
+  /* margin: 0 auto; */
+
+  margin: 0px 80px;
+}
+
+.cebu-form{
+  width: 31%;
+  height:480px;
+  text-align: left;
+  /* border: 1px solid black; */
+}
+.cebu-pic img{
+  /* 写真が大きすぎるのは何で？ */
+  width:100%;
+}
+
+.cebu-contents h2{
+  font-size: 20px;
+  font-family:"Yu Gothic" ;
+  margin-top:10px;
+  margin-bottom: 10px;
+}
+
+button{
+  background-color: rgb(33,35,53);
+  color: white;
+  font-size: 16px;
+  font-family:sans-serif;
+  padding: 15px 10px;
+  border-radius: 5px;
+  margin-top: 50px;
+}
+
+/* ボタンの位置を一番下に配置したい */
+.btn{
+  display: flex;
+  flex-direction: row;
+  justify-content:flex-end;
+  align-items: baseline;
+}
+
+.btn:hover{
+  opacity: 0.8;
+}
