@@ -1,0 +1,12 @@
+/* レスポンシブの書き方分からない */
+@media screen and (max-width:670px){
+  .myself-wrapper{
+    display: flex;
+    flex-direction: column;
+  }
+  .cebu-form{
+    width: 100%;
+  }
+}
+
+レスポンシブって、かけたいところの直後にコードを書かないと効かない？
