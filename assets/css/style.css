@@ -64,12 +64,13 @@ p{
 }
 
 .myself-wrapper{
-  height:400px;
+  height:auto;
   background-color: #f5f5f5;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  padding: 15px 0;
 }
 
 @media screen and (max-width: 830px) {
@@ -86,7 +87,14 @@ p{
 
 .myname{
   font-size: 30px;
-  margin-bottom:50px ;
+  margin-bottom:30px ;
+}
+
+@media screen and (max-width: 830px) {
+  .myname {
+      text-align: center;
+      margin-top: 15px;
+  }
 }
 
 .mydetail{
@@ -126,18 +134,20 @@ p{
 
 .cebu-form{
   width: 31%;
-  height:480px;
+  height:auto;
   text-align: left;
 }
 
-/* セブオススメポイントのレスポンシブがかからない。何で？ */
 @media screen and (max-width: 830px) {
-  .rec {
-      width: 100%;
-      height: auto;
-      margin-bottom: 41px;
+  .cebu-container {
+      flex-direction: column;
+  }
+  .cebu-form{
+    width: 80%;
+    margin-bottom: 15px;
   }
 }
+
 
 .cebu-pic img{
   /* 写真が大きすぎるのは何で？ */
@@ -151,6 +161,9 @@ p{
   margin-bottom: 10px;
 }
 
+.cebu-contents p{
+  height: 50px;
+}
 button{
   background-color: rgb(33,35,53);
   color: white;
@@ -161,7 +174,7 @@ button{
   margin-top: 50px;
 }
 
-/* ボタンの位置を一番下に配置したい */
+/* ボタンの位置を一番下に配置したい 凸凹になってしまうのは何で？*/
 .btn{
   display: flex;
   flex-direction: row;
@@ -184,6 +197,12 @@ button{
 .message-title{
   margin-top: 110px;
   margin-bottom:65px ;
+}
+
+@media screen and (max-width: 830px) {
+  .message-title {
+      margin-top:50px;
+  }
 }
 
 .contact button{
